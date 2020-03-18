@@ -1,0 +1,407 @@
+@font-face {
+    font-family: 'Raleway-Regular';
+    src: url('../fonts/raleway-family/Raleway-Regular.ttf');
+}
+@font-face {
+    font-family: 'Raleway-Thin-Italic';
+    src: url('../fonts/raleway-family/Raleway-Light-Italic.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+} 
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+header {
+    height: 72px;
+    background-color: #000000;
+}
+h2 {
+    font-family: 'Raleway-Regular';
+    font-size: 36px;
+    line-height: 43px;
+    text-transform: uppercase;
+} 
+section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+/* styles for button*/
+.btn {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    padding: 13px 30px;
+}
+.btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+.btn_block {
+    display: flex;
+    justify-content: center;
+}
+/*styles for headers*/
+.section_header {
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+}
+.section_header h2:after {
+    content: '';
+    display: block;
+    width: 64px;
+    height: 2px;
+    background-color: #ff8d2d;
+    position: absolute;
+    left: calc(50% - 32px) ;
+    bottom: -24px;
+}
+.section_header p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #a9aaac;
+}
+.section_header h2 {
+    position: relative;
+    margin-bottom: 50px;
+}
+/*styles for header*/
+nav{
+    display: flex;
+    justify-content:center;
+}
+.hat {
+    display: flex;
+    justify-content: space-between;
+    padding: 22px 150px;
+}
+nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
+    color: #b0b0b0;
+    text-decoration: none;
+    padding: 0px 20px;
+    margin-top: 7px;
+}
+/*styles fo features section*/
+.features_section {
+    background-image: url(../img/axit_back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+}
+.features_section .section_header {
+    text-align: initial;
+}
+.features_section .section_header h2 {
+    color: #ffffff;
+    font-weight: 100;
+}
+.block_cover {
+    margin-right: 130px;
+}
+.block_cover img {
+    margin: 35px 0px;
+}
+.block_cover .btn_block {
+    display: block;
+    justify-content: initial;
+}
+.block_cover .section_header h2::after {
+    background-color: #ffffff;
+    position: absolute;
+    left: 0px ;
+    bottom: -24px;
+}
+/*style fo first form*/
+.block_form {
+   background-color: #ffffff; 
+   display: block;
+   justify-content: center ;
+   height: 364px;
+   width: 364px;
+   margin-top: 50px;
+}
+.try input {
+    border: none;
+    margin: 23px 38px;
+    height: 35px;
+    width: 288px;
+    border-bottom: 1px solid #b0b0b0;
+}
+.free_try p {
+    font-family: 'Onen Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #f5f5f5;
+    text-align: center;
+    padding: 22px 0px;
+}
+.free_try p span {
+    color: #ff8b38;
+    text-transform: uppercase;
+}
+.try button {
+    background-color: #ff8b38;
+    color: #ffffff;
+    border: none;
+    width: 364px;
+    height: 55px;
+}
+/*styles for social media section*/
+.media_section {
+    display: flex;
+    justify-content: space-around;
+    max-height: 105px;
+    text-decoration: none;
+    font-family: 'Spen Sans', sans-serif;
+    background-image: linear-gradient(#ffffff 96% , #000000 111%);
+    padding: 20px 140px;
+}
+.media_section .social_icons a {
+    font-size: 47px;
+    color: #cccccc;
+    text-decoration: none;
+    padding: 0px 15px;
+}
+.social_text {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    max-width: 400px;
+    color: #95969a;
+}
+.social_text h3 {
+    font-size: 17px;
+    font-weight: bold;
+    color: #000000;
+
+}
+/*styles for about section*/
+.blocks {
+    display: flex;
+    justify-content: space-between;
+}
+.one_block {
+    text-align: center;
+    width: 30%;
+    font-family: 'Open Sans', sans-serif;
+}
+.blocks .one_block .title {
+    color: #000000;
+    font-weight: bold;
+    font-size: 16px;
+}
+.one_block p {
+    color: #a9aaac;
+    font-size: 12px;
+    margin: 10px 0px;
+    
+}
+/*styles for pricing section*/
+.pricing_section {
+    background-color: #f5f5f5;
+}
+.options_section {
+    display: flex;
+    justify-content: space-evenly;  
+    align-items: flex-end;
+}
+.option {
+    width: 30%;
+    text-align: center;
+}
+.status_row {
+    background-color: #ff8b38;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 2px 0px;
+}
+.status_row p {
+    padding: 10px 0px;
+}
+.head_option {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif ;
+    font-size: 18px;
+    font-weight: bold;
+}
+.row p {
+    padding: 12px 0px;
+}
+.head_option .cost p {
+    padding: 0px;
+}
+.head_option .cost b {
+    font-size: 60px;
+    position: relative;
+}
+.head_option .cost p {
+    font-size: 30px;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+.head_option .cost span {
+    position: relative;
+    top: 15px;
+    font-size: 80px;
+}
+.head_option .duration {
+    font-style: italic;
+    font-size: 12px;
+    color: #d6d6d6;
+    font-weight: 300;
+}
+.body_option {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333333;
+    background-color: #ffffff;  
+}
+.body_option .row p {
+    padding: 10px 0px;
+    border: 1px solid #f5f5f5;
+    
+}
+.body_option .row p span {
+    position: relative;
+    font-size: 70px;
+}
+/*styles for dowload section*/
+.download_section {
+    background-image: url(../img/download_back.png);
+    background-size: cover;
+}
+.download_section h2 {
+    color: #ffffff;
+    font-weight: 400;
+}
+.download_section .section_header h2:after {
+    background-color: #ffffff;
+}
+.download_section .section_header p {
+    color: #ffffff;
+    opacity: 0.5;
+    font-family: 'Raleway-Light', sans-serif;
+    font-size: 14px;
+    font-weight: 100;
+    
+}
+/*styles for contacts section*/
+.forma {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+}
+.contacts_section textarea{
+    width: 530px;
+    height: 150px;
+    resize: none;
+    border-color: #d6d6d6;
+    border: none;
+    border-bottom: 1px solid #d6d6d6 ;
+}
+.contacts_section input {
+    width: 530px;
+    height: 25px;
+    border: none;
+    border-bottom: 1px solid #d6d6d6  ;
+    padding: 12px 0px;
+}
+.contacts_section {
+    display: block;
+    margin-bottom: 50px;
+}
+.btn_form {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 180px;
+    
+
+}
+.btn_form button {
+    background-color: #ff9b51;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    height: 46px;
+    width: 150px;
+    border-radius: 5%;
+    border: none;
+
+}
+/* styles for footer */
+footer {
+    height: 72px;
+    background-color: #000000;
+    text-align: center;
+}
+.sprite {
+    background-image: url(../img/social_logos.png);
+    background-repeat: no-repeat;
+    display: inline-block;   
+}
+.spr_fb {
+    width: 30px;
+    height: 30px;
+    background-position: 5px 3px;
+}
+.spr_tw {
+    width: 30px;
+    height: 30px;
+    background-position: -40px 3px;
+}
+.spr_gp {
+    width: 30px;
+    height: 30px;
+    background-position: -90px 3px;
+}
+.spr_pi {
+    width: 30px;
+    height: 30px;
+    background-position: -137px 3px;
+}
+.spr_in {
+    width: 30px;
+    height: 30px;
+    background-position: -187px 3px;
+}
+.spr_su {
+    width: 30px;
+    height: 30px;
+    background-position: -240px 3px;
+}
+.spr_rs {
+    width: 30px;
+    height: 30px;
+    background-position: -295px 3px;
+}
+footer p {
+    font-family: 'Opnen Sans', sans-serif;
+    font-size: 9px;
+    color: #808080;
+}
+.foot {
+    padding-top: 20px ;
+}
+.foot a {
+    margin: 0px 10px;
+}
